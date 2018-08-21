@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Dynamic Projects Page Title',
+  });
+});
+
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Something is wrong!!',
